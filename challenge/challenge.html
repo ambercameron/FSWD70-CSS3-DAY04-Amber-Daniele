@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>CSS Day04 Challenge</title>
+	<link rel="stylesheet" href="challenge.css">
+	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+	<style>
+		body{
+			margin: 0px;
+		}
+
+		nav {
+			background-color: #233040;
+			font-family: 'Lato', sans-serif;
+			padding-left: 20px;
+			padding-top: 10px;
+		}
+
+		#navtop {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		#navbottom {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			padding-left: 80px;
+		}
+
+		#navbottom div {
+			margin-top: 20px;
+			padding-top: 20px;
+			margin-bottom: -20px;
+		}
+
+		a {
+			text-decoration: none;
+			color: #C2C3C4;
+			font-size: 13px;
+			padding: 5px;
+		}
+
+		a:hover{
+			border: solid 1px #C2C3C4;
+		}
+		.dropbtn {
+			font-size: 16px;
+			border: none;
+			background-color: #233040;
+			color: white;
+			font-weight: bold;
+		}
+
+		.dropdown {
+			position: relative;
+			display: inline-block;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: white;
+			min-width: 160px;
+			z-index: 1;
+		}
+
+		.dropdown-content a {
+			color: #233040;
+			padding: 12px 16px;
+			text-decoration: none;
+			display: block;
+		}
+
+		.dropdown-content a:hover {
+			color:#F08804;
+			text-decoration: underline;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+
+		}
+
+		.dropdown:hover .dropbtn {
+			background-color: #233040;
+		}
+		
+		.bold a {
+			color: white;
+			font-weight: bold;
+		}
+
+		select{
+			background-color: #F3F3F3;
+			width: 40px;
+			height: 30px;
+		}
+
+		option{
+			background-color: white;
+		}
+
+		textarea{
+			height: 30px;
+			min-width: 300px;
+			width: 65%;
+			margin: 0 auto;
+		}
+
+		button{
+			background-color: #FEBD69;
+			border: none;
+		}
+
+
+	</style>
+</head>
+<body>
+	<nav>
+		<div id="navtop">
+			<div>
+				<a href="challenge.html">
+					<img src="https://pngimg.com/uploads/amazon/amazon_PNG11.png" alt="amazon logo" style="width:100px;height:40px;border:0px">
+				</a>
+			</div>
+			<div>
+				<form>
+					<select name="All">
+						<option value="All Departments">All Departments</option>
+						<option value="Arts & Crafts">Arts & Crafts</option>
+						<option value="Automotive">Automotive</option>
+						<option value="Baby">Baby</option>
+					</select>
+					<textarea name="search bar" rows="1" cols="50">
+					</textarea>
+					<button type="button" onclick="alert('Website still in Beta stage')"><img src="search.png"></button>
+				</form>
+			</div>
+			<div class="bold">
+				<a href="http://www.amazon.com/b/ref=nav_swm_AE_EN_SWM_247CS?_encoding=UTF8&node=17416544011&pf_rd_m=ATVPDKIKX0DER&pf_rd_s=nav-sitewide-msg-export&pf_rd_r=WQSC9T0VPNECTWAY9RPP&pf_rd_r=WQSC9T0VPNECTWAY9RPP&pf_rd_t=4201&pf_rd_p=a5b6ddb7-0f24-453c-9c49-eebfe9b3eeff&pf_rd_p=a5b6ddb7-0f24-453c-9c49-eebfe9b3eeff&pf_rd_i=navbar-4201">24/7 Customer service. Learn more</a>
+			</div>
+		</div>
+		<div id="navbottom">
+			<div class="dropdown">
+				<button class="dropbtn">Departments</button>
+				<div class="dropdown-content">
+					<a href="https://www.amazon.com/s/browse?_encoding=UTF8&node=2858778011&ref_=nav_shopall-export_nav_mw_sbd_intl_video">Prime Video</a>
+					<a href="https://www.amazon.com/s/browse?_encoding=UTF8&node=5174&ref_=nav_shopall-export_nav_mw_sbd_intl_cd">Music, CDs & Vinyl</a>
+					<a href="https://www.amazon.com/s/browse?_encoding=UTF8&node=163856011&ref_=nav_shopall-export_nav_mw_sbd_intl_music">Digital Music</a>
+				</div>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/international-sales-offers/b/?ie=UTF8&node=15529609011&ref_=nav_navm_intl_deal_btn">Today's Deals</a>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/gift-cards/b/?ie=UTF8&node=2238192011&ref_=nav_cs_gift_cards">Gift Cards</a>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/gp/help/customer/display.html?nodeId=508510&ref_=nav_cs_help">Help</a>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/gp/browse.html?node=16115931011&ref_=nav_cs_registry">Registry</a>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/b/?_encoding=UTF8&ld=AZUSSOA-sell&node=12766669011&ref_=nav_cs_sell">Sell</a>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/gp/yourstore/home?ref_=nav_cs_ys">Your Amazon.com</a>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/gp/navigation/redirector.html/ref=sign-in-redirect?ie=UTF8&associationHandle=usflex&currentPageURL=https%3A%2F%2Fwww.amazon.com%2Fref%3Dnav_signin&pageType=Gateway&switchAccount=&yshURL=https%3A%2F%2Fwww.amazon.com%2Fgp%2Fyourstore%2Fhome%3Fie%3DUTF8%26ref_%3Dnav_signin">Hello, Sign in</a>
+			</div>
+			<div class= "bold">
+				<a href="https://www.amazon.com/gp/css/order-history?ref_=nav_orders_first">Orders</a>
+			</div>
+			<div>
+				<a href="https://www.amazon.com/gp/cart/view.html?ref_=nav_cart"><img src="cart.png" alt="Cart Image"></a>
+			</div>
+		</div>
+	</nav>
+
+
+
+
+
+
+
+
+	
+</body>
+</html>
