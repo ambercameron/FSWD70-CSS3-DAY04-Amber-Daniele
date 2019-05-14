@@ -153,4 +153,15 @@ button {
     font-size: 22px;
     padding: 10px 0px 0px 20px; }
 
+.list1 {
+  font-size: 19px;
+  font-weight: bold; }
+
+footer {
+  background-color: #232F3F; }
+
+ul li {
+  list-style: none;
+  color: white; }
+
 /*# sourceMappingURL=challenge.css.map */
